@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 using Newtonsoft.Json;
 
 namespace spp
@@ -14,6 +15,8 @@ namespace spp
     public partial class Form1 : Form
     {
         string URL = "https://api.coinmarketcap.com/v1/ticker/?limit=5";
+        string json;
+
         public class CryptoCurrency
         {
             public string id { get; set; }
@@ -38,35 +41,82 @@ namespace spp
             InitializeComponent();
         }
 
-        public void UpdateData()
+        public string GetData()
         {
             using (var WebClient = new System.Net.WebClient())
             {
-                var json = WebClient.DownloadString(URL);
-                dynamic cryp = JsonConvert.DeserializeObject(json);
+                var jsonnew = WebClient.DownloadString(URL);
+                return jsonnew;
 
-                label1.Text = cryp[0].id;
-                label2.Text = cryp[1].id;
-                label3.Text = cryp[2].id;
-                label4.Text = cryp[3].id;
-                label5.Text = cryp[4].id;
-
-                textBox1.Text = cryp[0].price_usd;
-                textBox2.Text = cryp[1].price_usd;
-                textBox3.Text = cryp[2].price_usd;
-                textBox4.Text = cryp[3].price_usd;
-                textBox5.Text = cryp[4].price_usd;
             }
         }
+        public void UpdateData(string jsonstr)
+        {
+            dynamic cryp = JsonConvert.DeserializeObject(jsonstr);
+
+            labelName1.Text = cryp[0].id;
+            labelName2.Text = cryp[1].id;
+            labelName3.Text = cryp[2].id;
+            labelName4.Text = cryp[3].id;
+            labelName5.Text = cryp[4].id;
+
+            txtBoxValueUSD1.Text = cryp[0].price_usd;
+            txtBoxValueUSD2.Text = cryp[1].price_usd;
+            txtBoxValueUSD3.Text = cryp[2].price_usd;
+            txtBoxValueUSD4.Text = cryp[3].price_usd;
+            txtBoxValueUSD5.Text = cryp[4].price_usd;
+
+            labelSymb1.Text = cryp[0].symbol;
+            labelSymb2.Text = cryp[1].symbol;
+            labelSymb3.Text = cryp[2].symbol;
+            labelSymb4.Text = cryp[3].symbol;
+            labelSymb5.Text = cryp[4].symbol;
+
+            labelChanges1h1.Text = cryp[0].percent_change_1h;
+            labelChanges1h2.Text = cryp[1].percent_change_1h;
+            labelChanges1h3.Text = cryp[2].percent_change_1h;
+            labelChanges1h4.Text = cryp[3].percent_change_1h;
+            labelChanges1h5.Text = cryp[4].percent_change_1h;
+
+            labelChanges24h1.Text = cryp[0].percent_change_24h;
+            labelChanges24h2.Text = cryp[1].percent_change_24h;
+            labelChanges24h3.Text = cryp[2].percent_change_24h;
+            labelChanges24h4.Text = cryp[3].percent_change_24h;
+            labelChanges24h5.Text = cryp[4].percent_change_24h;
+        }
+        /* public async void DoAll(object state)
+         {
+             string newjson = await Task.Factory.StartNew<string>(() => GetData(), TaskCreationOptions.LongRunning);
+             this.labelChanges1h.Text = "HELLO";
+             if (newjson != json)
+             {
+                 UpdateData(newjson);
+                 json = newjson;
+             }
+         }*/
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            UpdateData();
+
+            //TimerCallback tm = new TimerCallback(DoAll);
+            //System.Threading.Timer timer = new System.Threading.Timer(tm, null, 0, 2000);
+            
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-            UpdateData();
+            string newjson = await Task.Factory.StartNew<string> (() => GetData());
+            if (newjson != json)
+            {
+                UpdateData(newjson);
+                json = newjson;
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
