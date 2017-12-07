@@ -65,6 +65,7 @@
             this.txtBoxEmailTo = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.labelEmail = new System.Windows.Forms.Label();
+            this.labelLastUpdate = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,9 +84,9 @@
             this.labelName1.AutoSize = true;
             this.labelName1.Location = new System.Drawing.Point(3, 31);
             this.labelName1.Name = "labelName1";
-            this.labelName1.Size = new System.Drawing.Size(35, 13);
+            this.labelName1.Size = new System.Drawing.Size(62, 13);
             this.labelName1.TabIndex = 1;
-            this.labelName1.Text = "label1";
+            this.labelName1.Text = "CryptoCurr1";
             // 
             // txtBoxValueUSD1
             // 
@@ -93,43 +94,42 @@
             this.txtBoxValueUSD1.Name = "txtBoxValueUSD1";
             this.txtBoxValueUSD1.Size = new System.Drawing.Size(75, 20);
             this.txtBoxValueUSD1.TabIndex = 2;
-            this.txtBoxValueUSD1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // labelName2
             // 
             this.labelName2.AutoSize = true;
             this.labelName2.Location = new System.Drawing.Point(3, 87);
             this.labelName2.Name = "labelName2";
-            this.labelName2.Size = new System.Drawing.Size(35, 13);
+            this.labelName2.Size = new System.Drawing.Size(62, 13);
             this.labelName2.TabIndex = 3;
-            this.labelName2.Text = "label2";
+            this.labelName2.Text = "CryptoCurr2";
             // 
             // labelName3
             // 
             this.labelName3.AutoSize = true;
             this.labelName3.Location = new System.Drawing.Point(3, 143);
             this.labelName3.Name = "labelName3";
-            this.labelName3.Size = new System.Drawing.Size(35, 13);
+            this.labelName3.Size = new System.Drawing.Size(62, 13);
             this.labelName3.TabIndex = 4;
-            this.labelName3.Text = "label3";
+            this.labelName3.Text = "CryptoCurr3";
             // 
             // labelName4
             // 
             this.labelName4.AutoSize = true;
             this.labelName4.Location = new System.Drawing.Point(3, 199);
             this.labelName4.Name = "labelName4";
-            this.labelName4.Size = new System.Drawing.Size(35, 13);
+            this.labelName4.Size = new System.Drawing.Size(62, 13);
             this.labelName4.TabIndex = 5;
-            this.labelName4.Text = "label4";
+            this.labelName4.Text = "CryptoCurr4";
             // 
             // labelName5
             // 
             this.labelName5.AutoSize = true;
             this.labelName5.Location = new System.Drawing.Point(3, 255);
             this.labelName5.Name = "labelName5";
-            this.labelName5.Size = new System.Drawing.Size(35, 13);
+            this.labelName5.Size = new System.Drawing.Size(62, 13);
             this.labelName5.TabIndex = 6;
-            this.labelName5.Text = "label5";
+            this.labelName5.Text = "CryptoCurr5";
             // 
             // txtBoxValueUSD2
             // 
@@ -241,45 +241,45 @@
             this.labelSymb1.AutoSize = true;
             this.labelSymb1.Location = new System.Drawing.Point(165, 31);
             this.labelSymb1.Name = "labelSymb1";
-            this.labelSymb1.Size = new System.Drawing.Size(61, 13);
+            this.labelSymb1.Size = new System.Drawing.Size(39, 13);
             this.labelSymb1.TabIndex = 14;
-            this.labelSymb1.Text = "labelSymb1";
+            this.labelSymb1.Text = "Symb1";
             // 
             // labelSymb2
             // 
             this.labelSymb2.AutoSize = true;
             this.labelSymb2.Location = new System.Drawing.Point(165, 87);
             this.labelSymb2.Name = "labelSymb2";
-            this.labelSymb2.Size = new System.Drawing.Size(41, 13);
+            this.labelSymb2.Size = new System.Drawing.Size(39, 13);
             this.labelSymb2.TabIndex = 15;
-            this.labelSymb2.Text = "label10";
+            this.labelSymb2.Text = "Symb2";
             // 
             // labelSymb3
             // 
             this.labelSymb3.AutoSize = true;
             this.labelSymb3.Location = new System.Drawing.Point(165, 143);
             this.labelSymb3.Name = "labelSymb3";
-            this.labelSymb3.Size = new System.Drawing.Size(41, 13);
+            this.labelSymb3.Size = new System.Drawing.Size(39, 13);
             this.labelSymb3.TabIndex = 16;
-            this.labelSymb3.Text = "label11";
+            this.labelSymb3.Text = "Symb3";
             // 
             // labelSymb4
             // 
             this.labelSymb4.AutoSize = true;
             this.labelSymb4.Location = new System.Drawing.Point(165, 199);
             this.labelSymb4.Name = "labelSymb4";
-            this.labelSymb4.Size = new System.Drawing.Size(41, 13);
+            this.labelSymb4.Size = new System.Drawing.Size(39, 13);
             this.labelSymb4.TabIndex = 17;
-            this.labelSymb4.Text = "label12";
+            this.labelSymb4.Text = "Symb4";
             // 
             // labelSymb5
             // 
             this.labelSymb5.AutoSize = true;
             this.labelSymb5.Location = new System.Drawing.Point(165, 255);
             this.labelSymb5.Name = "labelSymb5";
-            this.labelSymb5.Size = new System.Drawing.Size(41, 13);
+            this.labelSymb5.Size = new System.Drawing.Size(39, 13);
             this.labelSymb5.TabIndex = 18;
-            this.labelSymb5.Text = "label13";
+            this.labelSymb5.Text = "Symb5";
             // 
             // labelChanges1h
             // 
@@ -304,90 +304,90 @@
             this.labelChanges1h1.AutoSize = true;
             this.labelChanges1h1.Location = new System.Drawing.Point(246, 31);
             this.labelChanges1h1.Name = "labelChanges1h1";
-            this.labelChanges1h1.Size = new System.Drawing.Size(35, 13);
+            this.labelChanges1h1.Size = new System.Drawing.Size(67, 13);
             this.labelChanges1h1.TabIndex = 21;
-            this.labelChanges1h1.Text = "label6";
+            this.labelChanges1h1.Text = "1hChanges1";
             // 
             // labelChanges1h2
             // 
             this.labelChanges1h2.AutoSize = true;
             this.labelChanges1h2.Location = new System.Drawing.Point(246, 87);
             this.labelChanges1h2.Name = "labelChanges1h2";
-            this.labelChanges1h2.Size = new System.Drawing.Size(35, 13);
+            this.labelChanges1h2.Size = new System.Drawing.Size(67, 13);
             this.labelChanges1h2.TabIndex = 22;
-            this.labelChanges1h2.Text = "label7";
+            this.labelChanges1h2.Text = "1hChanges2";
             // 
             // labelChanges1h3
             // 
             this.labelChanges1h3.AutoSize = true;
             this.labelChanges1h3.Location = new System.Drawing.Point(246, 143);
             this.labelChanges1h3.Name = "labelChanges1h3";
-            this.labelChanges1h3.Size = new System.Drawing.Size(35, 13);
+            this.labelChanges1h3.Size = new System.Drawing.Size(67, 13);
             this.labelChanges1h3.TabIndex = 23;
-            this.labelChanges1h3.Text = "label8";
+            this.labelChanges1h3.Text = "1hChanges3";
             // 
             // labelChanges1h4
             // 
             this.labelChanges1h4.AutoSize = true;
             this.labelChanges1h4.Location = new System.Drawing.Point(246, 199);
             this.labelChanges1h4.Name = "labelChanges1h4";
-            this.labelChanges1h4.Size = new System.Drawing.Size(35, 13);
+            this.labelChanges1h4.Size = new System.Drawing.Size(67, 13);
             this.labelChanges1h4.TabIndex = 24;
-            this.labelChanges1h4.Text = "label9";
+            this.labelChanges1h4.Text = "1hChanges4";
             // 
             // labelChanges1h5
             // 
             this.labelChanges1h5.AutoSize = true;
             this.labelChanges1h5.Location = new System.Drawing.Point(246, 255);
             this.labelChanges1h5.Name = "labelChanges1h5";
-            this.labelChanges1h5.Size = new System.Drawing.Size(41, 13);
+            this.labelChanges1h5.Size = new System.Drawing.Size(67, 13);
             this.labelChanges1h5.TabIndex = 25;
-            this.labelChanges1h5.Text = "label10";
+            this.labelChanges1h5.Text = "1hChanges5";
             // 
             // labelChanges24h1
             // 
             this.labelChanges24h1.AutoSize = true;
             this.labelChanges24h1.Location = new System.Drawing.Point(327, 31);
             this.labelChanges24h1.Name = "labelChanges24h1";
-            this.labelChanges24h1.Size = new System.Drawing.Size(41, 13);
+            this.labelChanges24h1.Size = new System.Drawing.Size(73, 13);
             this.labelChanges24h1.TabIndex = 26;
-            this.labelChanges24h1.Text = "label11";
+            this.labelChanges24h1.Text = "24hChanges1";
             // 
             // labelChanges24h2
             // 
             this.labelChanges24h2.AutoSize = true;
             this.labelChanges24h2.Location = new System.Drawing.Point(327, 87);
             this.labelChanges24h2.Name = "labelChanges24h2";
-            this.labelChanges24h2.Size = new System.Drawing.Size(41, 13);
+            this.labelChanges24h2.Size = new System.Drawing.Size(73, 13);
             this.labelChanges24h2.TabIndex = 27;
-            this.labelChanges24h2.Text = "label12";
+            this.labelChanges24h2.Text = "24hChanges2";
             // 
             // labelChanges24h3
             // 
             this.labelChanges24h3.AutoSize = true;
             this.labelChanges24h3.Location = new System.Drawing.Point(327, 143);
             this.labelChanges24h3.Name = "labelChanges24h3";
-            this.labelChanges24h3.Size = new System.Drawing.Size(41, 13);
+            this.labelChanges24h3.Size = new System.Drawing.Size(73, 13);
             this.labelChanges24h3.TabIndex = 28;
-            this.labelChanges24h3.Text = "label13";
+            this.labelChanges24h3.Text = "24hChanges3";
             // 
             // labelChanges24h4
             // 
             this.labelChanges24h4.AutoSize = true;
             this.labelChanges24h4.Location = new System.Drawing.Point(327, 199);
             this.labelChanges24h4.Name = "labelChanges24h4";
-            this.labelChanges24h4.Size = new System.Drawing.Size(41, 13);
+            this.labelChanges24h4.Size = new System.Drawing.Size(73, 13);
             this.labelChanges24h4.TabIndex = 29;
-            this.labelChanges24h4.Text = "label14";
+            this.labelChanges24h4.Text = "24hChanges4";
             // 
             // labelChanges24h5
             // 
             this.labelChanges24h5.AutoSize = true;
             this.labelChanges24h5.Location = new System.Drawing.Point(327, 255);
             this.labelChanges24h5.Name = "labelChanges24h5";
-            this.labelChanges24h5.Size = new System.Drawing.Size(41, 13);
+            this.labelChanges24h5.Size = new System.Drawing.Size(73, 13);
             this.labelChanges24h5.TabIndex = 30;
-            this.labelChanges24h5.Text = "label15";
+            this.labelChanges24h5.Text = "24hChanges5";
             // 
             // btnSendMail
             // 
@@ -410,7 +410,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 310000;
+            this.timer1.Interval = 60000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // labelEmail
@@ -422,16 +422,27 @@
             this.labelEmail.TabIndex = 14;
             this.labelEmail.Text = "E-mail:";
             // 
+            // labelLastUpdate
+            // 
+            this.labelLastUpdate.AutoSize = true;
+            this.labelLastUpdate.Location = new System.Drawing.Point(415, 428);
+            this.labelLastUpdate.Name = "labelLastUpdate";
+            this.labelLastUpdate.Size = new System.Drawing.Size(69, 13);
+            this.labelLastUpdate.TabIndex = 15;
+            this.labelLastUpdate.Text = "Last update: ";
+            // 
             // FormCurr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(556, 462);
+            this.Controls.Add(this.labelLastUpdate);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.txtBoxEmailTo);
             this.Controls.Add(this.btnSendMail);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.btnUpdate);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FormCurr";
             this.Text = "CryptoCurrency";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -480,6 +491,7 @@
         private System.Windows.Forms.TextBox txtBoxEmailTo;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.Label labelLastUpdate;
     }
 }
 
