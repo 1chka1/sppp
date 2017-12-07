@@ -4,8 +4,8 @@ C:\Users\kosty_000\projects\spp\spp\bin\Debug\spp.pdb
 C:\Users\kosty_000\projects\spp\spp\bin\Debug\Newtonsoft.Json.dll
 C:\Users\kosty_000\projects\spp\spp\bin\Debug\Newtonsoft.Json.xml
 C:\Users\kosty_000\projects\spp\spp\obj\Debug\spp.csprojResolveAssemblyReference.cache
-C:\Users\kosty_000\projects\spp\spp\obj\Debug\spp.Form1.resources
 C:\Users\kosty_000\projects\spp\spp\obj\Debug\spp.Properties.Resources.resources
 C:\Users\kosty_000\projects\spp\spp\obj\Debug\spp.csproj.GenerateResource.Cache
 C:\Users\kosty_000\projects\spp\spp\obj\Debug\spp.exe
 C:\Users\kosty_000\projects\spp\spp\obj\Debug\spp.pdb
+C:\Users\kosty_000\projects\spp\spp\obj\Debug\spp.FormCurr.resources

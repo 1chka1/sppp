@@ -1,6 +1,6 @@
 ﻿namespace spp
 {
-    partial class Form1
+    partial class FormCurr
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.labelName1 = new System.Windows.Forms.Label();
             this.txtBoxValueUSD1 = new System.Windows.Forms.TextBox();
@@ -40,9 +41,9 @@
             this.txtBoxValueUSD4 = new System.Windows.Forms.TextBox();
             this.txtBoxValueUSD5 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.labelSymbol = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.labelValue = new System.Windows.Forms.Label();
-            this.labelSymbol = new System.Windows.Forms.Label();
             this.labelSymb1 = new System.Windows.Forms.Label();
             this.labelSymb2 = new System.Windows.Forms.Label();
             this.labelSymb3 = new System.Windows.Forms.Label();
@@ -60,6 +61,10 @@
             this.labelChanges24h3 = new System.Windows.Forms.Label();
             this.labelChanges24h4 = new System.Windows.Forms.Label();
             this.labelChanges24h5 = new System.Windows.Forms.Label();
+            this.btnSendMail = new System.Windows.Forms.Button();
+            this.txtBoxEmailTo = new System.Windows.Forms.TextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.labelEmail = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -204,6 +209,15 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(408, 315);
             this.tableLayoutPanel1.TabIndex = 11;
             // 
+            // labelSymbol
+            // 
+            this.labelSymbol.AutoSize = true;
+            this.labelSymbol.Location = new System.Drawing.Point(165, 0);
+            this.labelSymbol.Name = "labelSymbol";
+            this.labelSymbol.Size = new System.Drawing.Size(41, 13);
+            this.labelSymbol.TabIndex = 12;
+            this.labelSymbol.Text = "Symbol";
+            // 
             // labelName
             // 
             this.labelName.AutoSize = true;
@@ -221,15 +235,6 @@
             this.labelValue.Size = new System.Drawing.Size(66, 13);
             this.labelValue.TabIndex = 13;
             this.labelValue.Text = "Value (USD)";
-            // 
-            // labelSymbol
-            // 
-            this.labelSymbol.AutoSize = true;
-            this.labelSymbol.Location = new System.Drawing.Point(165, 0);
-            this.labelSymbol.Name = "labelSymbol";
-            this.labelSymbol.Size = new System.Drawing.Size(41, 13);
-            this.labelSymbol.TabIndex = 12;
-            this.labelSymbol.Text = "Symbol";
             // 
             // labelSymb1
             // 
@@ -384,19 +389,56 @@
             this.labelChanges24h5.TabIndex = 30;
             this.labelChanges24h5.Text = "label15";
             // 
-            // Form1
+            // btnSendMail
+            // 
+            this.btnSendMail.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSendMail.Location = new System.Drawing.Point(12, 428);
+            this.btnSendMail.Name = "btnSendMail";
+            this.btnSendMail.Size = new System.Drawing.Size(75, 23);
+            this.btnSendMail.TabIndex = 12;
+            this.btnSendMail.Text = "Send Mail";
+            this.btnSendMail.UseVisualStyleBackColor = true;
+            this.btnSendMail.Click += new System.EventHandler(this.btnSendMail_Click);
+            // 
+            // txtBoxEmailTo
+            // 
+            this.txtBoxEmailTo.Location = new System.Drawing.Point(12, 402);
+            this.txtBoxEmailTo.Name = "txtBoxEmailTo";
+            this.txtBoxEmailTo.Size = new System.Drawing.Size(237, 20);
+            this.txtBoxEmailTo.TabIndex = 13;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 310000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // labelEmail
+            // 
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Location = new System.Drawing.Point(15, 386);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(38, 13);
+            this.labelEmail.TabIndex = 14;
+            this.labelEmail.Text = "E-mail:";
+            // 
+            // FormCurr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 364);
+            this.ClientSize = new System.Drawing.Size(556, 462);
+            this.Controls.Add(this.labelEmail);
+            this.Controls.Add(this.txtBoxEmailTo);
+            this.Controls.Add(this.btnSendMail);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.btnUpdate);
-            this.Name = "Form1";
+            this.Name = "FormCurr";
             this.Text = "CryptoCurrency";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -434,6 +476,10 @@
         private System.Windows.Forms.Label labelChanges24h3;
         private System.Windows.Forms.Label labelChanges24h4;
         private System.Windows.Forms.Label labelChanges24h5;
+        private System.Windows.Forms.Button btnSendMail;
+        private System.Windows.Forms.TextBox txtBoxEmailTo;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label labelEmail;
     }
 }
 
